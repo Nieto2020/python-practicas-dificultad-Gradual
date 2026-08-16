@@ -1,0 +1,528 @@
+# Python — 40 Prácticas de Dificultad Gradual
+
+Aprende Python resolviendo problemas como en una entrevista técnica. Avanza por niveles y **no mires las soluciones** hasta haber intentado el problema por tu cuenta.
+
+> Cada ejercicio introduce **una herramienta nueva**:
+> variables → condicionales → ciclos → strings → listas → diccionarios → funciones → algoritmos → estructuras de datos.
+
+## Contenido
+
+| Nivel | Tema | Problemas |
+| ----- | ---- | --------: |
+| [1 — Fundamentos](#nivel-1--fundamentos) | sintaxis, variables, condicionales y ciclos | 1–8 |
+| [2 — Strings](#nivel-2--strings) | cadenas | 9–14 |
+| [3 — Listas](#nivel-3--listas) | listas | 15–20 |
+| [4 — Diccionarios y funciones](#nivel-4--diccionarios-y-funciones) | diccionarios y funciones | 21–25 |
+| [5 — Problemas de algoritmos](#nivel-5--problemas-de-algoritmos) | algoritmos | 26–30 |
+| [6 — Entrevista Junior](#nivel-6--entrevista-junior) | escenarios integradores | 31–35 |
+| [7 — Data/IA](#nivel-7--dataia) | datos e inteligencia artificial | 36–40 |
+
+---
+
+## Nivel 1 — Fundamentos
+
+**Objetivo:** dominar sintaxis, variables, `if`, `for`, `while` y operaciones básicas.
+
+### 1. Par o impar
+
+Recibe un número entero y determina si es par o impar.
+
+- **Ejemplo:** `7 → "Impar"`
+
+### 2. Mayor de tres números
+
+Recibe tres números y devuelve cuál es el mayor.
+
+- **Restricción:** no uses `max()`.
+
+### 3. Conversor de temperatura
+
+Convierte Celsius a Fahrenheit y viceversa.
+
+### 4. Contador de números
+
+Dado un número `N`, imprime todos los números del `1` al `N`.
+
+### 5. Suma de números
+
+Dado `N`, calcula la suma:
+
+```text
+1 + 2 + 3 + ... + N
+```
+
+- **Restricción:** no uses una fórmula matemática; utiliza un ciclo.
+
+### 6. Tabla de multiplicar
+
+Recibe un número e imprime su tabla del 1 al 10.
+
+### 7. Factorial
+
+Calcula:
+
+```text
+5! = 5 × 4 × 3 × 2 × 1 = 120
+```
+
+- **Restricción:** no uses `math.factorial()`.
+
+### 8. Número primo
+
+Determina si un número es primo.
+
+- **Ejemplos:**
+  - `7 → True`
+  - `10 → False`
+
+---
+
+## Nivel 2 — Strings
+
+Aquí empiezan problemas bastante comunes en entrevistas.
+
+### 9. Contar vocales
+
+Dada una cadena, cuenta cuántas vocales contiene.
+
+- **Ejemplos:**
+  - `"python" → 1`
+  - `"hola mundo" → 4`
+
+### 10. Invertir una cadena
+
+Invierte un string.
+
+- **Ejemplo:** `"python" → "nohtyp"`
+- **Restricción:** intenta primero sin `[::-1]`.
+
+### 11. Palíndromo
+
+Determina si una palabra se lee igual al derecho y al revés.
+
+- **Ejemplos:**
+  - `"reconocer" → True`
+  - `"python" → False`
+
+### 12. Contar palabras
+
+Dada una frase, determina cuántas palabras contiene.
+
+- **Ejemplo:** `"Python es muy interesante" → 4`
+
+### 13. Frecuencia de caracteres
+
+Cuenta cuántas veces aparece cada carácter.
+
+- **Entrada:** `"banana"`
+- **Salida:**
+
+```text
+b: 1
+a: 3
+n: 2
+```
+
+### 14. Primer carácter no repetido
+
+Dada una cadena, encuentra el primer carácter que aparece solamente una vez.
+
+- **Ejemplo:** `"swiss" → "w"`
+
+> 💡 Este ya es un **problema de entrevista bastante clásico**.
+
+---
+
+## Nivel 3 — Listas
+
+Aquí empieza a importar más tu capacidad para pensar algorítmicamente.
+
+### 15. Encontrar el máximo
+
+Dada una lista de números, encuentra el mayor.
+
+- **Restricción:** no uses `max()`.
+
+### 16. Segundo número más grande
+
+- **Entrada:** `[10, 5, 8, 20, 15]`
+- **Salida:** `15`
+- **Restricción:** no uses `sort()`.
+
+### 17. Eliminar duplicados
+
+- **Entrada:** `[1, 2, 2, 3, 4, 4, 5]`
+- **Salida:** `[1, 2, 3, 4, 5]`
+
+Primero intenta resolverlo **sin `set()`**.
+
+### 18. Encontrar elementos repetidos
+
+Dada una lista, devuelve cuáles elementos aparecen más de una vez.
+
+- **Entrada:** `[1, 2, 3, 2, 4, 1]`
+- **Salida:** `[1, 2]`
+
+### 19. Rotar una lista
+
+- **Entrada:** `[1, 2, 3, 4, 5]` con `k = 2`
+- **Salida:** `[4, 5, 1, 2, 3]`
+
+### 20. Dos números que suman X
+
+- **Entrada:** `[2, 7, 11, 15]` y `target = 9`
+- **Salida:** los dos números cuya suma sea `9`.
+
+> 💡 Este problema es muy importante porque te introduce a pensar en **complejidad temporal**.
+
+---
+
+## Nivel 4 — Diccionarios y funciones
+
+### 21. Inventario
+
+Tienes:
+
+```python
+inventario = {
+    "manzanas": 10,
+    "peras": 5,
+    "naranjas": 8
+}
+```
+
+Crea funciones para:
+
+- agregar productos
+- eliminar productos
+- modificar cantidades
+- consultar cantidad
+- calcular productos totales
+
+### 22. Frecuencia de números
+
+- **Entrada:** `[1, 2, 2, 3, 3, 3, 4]`
+- **Salida:**
+
+```python
+{
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 1
+}
+```
+
+### 23. Agrupar palabras por longitud
+
+- **Entrada:** `["sol", "python", "casa", "programacion", "pan"]`
+- **Salida (equivalente):**
+
+```python
+{
+    3: ["sol", "casa", "pan"],
+    6: ["python"],
+    12: ["programacion"]
+}
+```
+
+### 24. Anagramas
+
+Determina si dos palabras son anagramas.
+
+- **Ejemplos:**
+  - `"roma"` y `"amor"` → `True`
+  - `"python"` y `"java"` → `False`
+
+### 25. Dos listas
+
+Dadas:
+
+```python
+a = [1, 2, 3, 4]
+b = [3, 4, 5, 6]
+```
+
+encuentra los elementos que aparecen en ambas.
+
+- **Salida:** `[3, 4]`
+
+---
+
+## Nivel 5 — Problemas de algoritmos
+
+Aquí ya empezaría a tratarte como candidato a una entrevista junior.
+
+### 26. Búsqueda binaria
+
+Dada una lista **ordenada**:
+
+```python
+[1, 3, 5, 7, 9, 11, 13, 15]
+```
+
+encuentra un número utilizando **búsqueda binaria**.
+
+- **Restricción:** no puedes utilizar `in` ni `index()`; debes implementar el algoritmo.
+
+### 27. Ordenamiento
+
+Implementa **Bubble Sort**.
+
+- **Entrada:** `[5, 2, 8, 1, 3]`
+- **Salida:** `[1, 2, 3, 5, 8]`
+
+Después intenta implementar:
+
+- Selection Sort
+- Insertion Sort
+
+### 28. Paréntesis balanceados
+
+Determina si una expresión tiene paréntesis correctamente balanceados.
+
+- **Ejemplos:**
+  - `"(())"` → `True`
+  - `"(()"` → `False`
+  - `"())("` → `False`
+  - `"((()))"` → `True`
+
+> 💡 Aquí descubrirás naturalmente por qué existe una estructura llamada **stack/pila**.
+
+### 29. Número faltante
+
+Dada una lista que contiene números del `1` al `N`, pero falta uno:
+
+- **Entrada:** `[1, 2, 3, 5, 6]`
+- **Salida:** `4`
+
+Intenta encontrar **dos soluciones diferentes**.
+
+### 30. Subcadena más larga sin repetir
+
+- **Entrada:** `"abcabcbb"`
+- **Salida:** `3`
+
+Porque `"abc"` es la más larga.
+
+> 💡 Este es un problema típico de entrevistas porque introduce **sliding window**.
+
+---
+
+## Nivel 6 — Entrevista Junior
+
+Ahora dejaría de darte problemas aislados y empezaría a darte escenarios.
+
+### 31. Sistema de calificaciones
+
+Crea un programa que reciba estudiantes:
+
+```python
+[
+    {"nombre": "Ana", "calificaciones": [90, 80, 95]},
+    {"nombre": "Luis", "calificaciones": [70, 85, 75]},
+    {"nombre": "Pedro", "calificaciones": [100, 95, 90]}
+]
+```
+
+Debe poder:
+
+- calcular promedio
+- encontrar al mejor estudiante
+- encontrar al peor estudiante
+- determinar quién aprobó
+- calcular promedio general
+
+### 32. Analizador de texto
+
+- **Entrada:** `"Python es un lenguaje. Python es poderoso."`
+
+Debe obtener:
+
+- número de palabras
+- número de caracteres
+- palabra más frecuente
+- número de palabras únicas
+- palabra más larga
+
+### 33. Sistema bancario
+
+Crea una clase `CuentaBancaria` con:
+
+- titular
+- saldo
+
+Y métodos:
+
+```text
+depositar()
+retirar()
+consultar_saldo()
+```
+
+Debe impedir retirar más dinero del disponible.
+
+> 💡 Aquí introduces **Programación Orientada a Objetos**.
+
+### 34. Sistema de biblioteca
+
+Crea las clases:
+
+```text
+Libro
+Usuario
+Biblioteca
+```
+
+La biblioteca debe permitir:
+
+- agregar libros
+- registrar usuarios
+- prestar libros
+- devolver libros
+- consultar libros disponibles
+- consultar libros prestados
+
+### 35. Procesamiento de logs
+
+Imagina que recibes:
+
+```text
+2026-08-16 10:30:22 INFO Usuario conectado
+2026-08-16 10:31:10 ERROR Base de datos caída
+2026-08-16 10:32:15 INFO Usuario desconectado
+2026-08-16 10:33:02 ERROR Timeout
+```
+
+Tu programa debe obtener:
+
+```text
+INFO: 2
+ERROR: 2
+```
+
+y después mostrar cuáles fueron los errores.
+
+> 💡 Este tipo de problema empieza a acercarse bastante a **Data Engineering**.
+
+---
+
+## Nivel 7 — Data/IA
+
+Como estás estudiando Datos e IA, después de dominar los anteriores yo pasaría a problemas más cercanos a tu campo.
+
+### 36. Estadísticas básicas
+
+Dada una lista de números:
+
+```python
+[10, 20, 20, 30, 40, 50]
+```
+
+calcula manualmente:
+
+- media
+- mediana
+- moda
+- mínimo
+- máximo
+- rango
+
+- **Restricción:** sin utilizar `numpy` ni `statistics`.
+
+### 37. Normalización
+
+Dada:
+
+```python
+[10, 20, 30, 40, 50]
+```
+
+aplica **Min-Max Scaling**:
+
+$$
+x' = \frac{x - min(x)}{max(x) - min(x)}
+$$
+
+### 38. Limpieza de datos
+
+Dado:
+
+```python
+[
+    {"nombre": " Ana ", "edad": "20"},
+    {"nombre": "Luis", "edad": "25"},
+    {"nombre": " Pedro ", "edad": None},
+    {"nombre": "Ana", "edad": "20"}
+]
+```
+
+realiza:
+
+- limpieza de espacios
+- conversión de tipos
+- detección de valores faltantes
+- eliminación de duplicados
+- generación de estadísticas
+
+### 39. CSV
+
+Lee un archivo CSV de estudiantes y calcula:
+
+```text
+promedio general
+mejor estudiante
+peor estudiante
+materia con mayor promedio
+```
+
+Aquí ya puedes utilizar la librería estándar `csv`.
+
+Después hazlo utilizando **Pandas**.
+
+### 40. Mini ETL
+
+Construye un programa que:
+
+```text
+CSV
+ ↓
+Leer datos
+ ↓
+Limpiar datos
+ ↓
+Transformar datos
+ ↓
+Calcular métricas
+ ↓
+Guardar nuevo CSV
+```
+
+> 💡 Este sería un excelente proyecto para conectar **Python + Data Engineering**.
+
+## Cómo trabajarlo
+
+No intentes resolver los 40 de golpe. Conviértelo en una especie de **entrevista progresiva**:
+
+| Etapa                  | Problemas |
+| ---------------------- | --------: |
+| Fundamentos            |       1–8 |
+| Strings                |      9–14 |
+| Listas                 |     15–20 |
+| Diccionarios/funciones |     21–25 |
+| Algoritmos             |     26–30 |
+| Python avanzado        |     31–35 |
+| Data/IA                |     36–40 |
+
+Y una regla importante:
+
+> **No busques la solución inmediatamente.**
+
+Para cada problema intenta:
+
+1. Entender exactamente qué entra y qué debe salir.
+2. Escribir algunos ejemplos.
+3. Resolverlo primero de la manera más sencilla que se te ocurra.
+4. Probar casos normales y casos límite.
+5. Después preguntarte: **"¿puedo hacerlo más eficiente?"**
+6. Solo entonces comparar con una solución más profesional.
