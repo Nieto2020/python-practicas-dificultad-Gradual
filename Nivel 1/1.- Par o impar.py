@@ -1,3 +1,5 @@
+#Recibe un número entero y determina si es par o impar.
+
 num = 0
 option = "y"
 

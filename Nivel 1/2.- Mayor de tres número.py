@@ -1,3 +1,5 @@
+#Recibe tres números y devuelve cuál es el mayor.
+
 lista = []
 
 while True:
