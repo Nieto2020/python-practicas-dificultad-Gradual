@@ -5,7 +5,9 @@
 #Restricción:** no uses una fórmula matemática; utiliza un ciclo.
 
 n = 7
+acumulador = 0
 
 for i in range(1, n+1):
     print(i)
-    i=+1
+    acumulador += i
+print(acumulador)
