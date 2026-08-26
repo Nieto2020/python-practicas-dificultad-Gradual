@@ -94,7 +94,7 @@ Dada una cadena, cuenta cuántas vocales contiene.
 Invierte un string.
 
 - **Ejemplo:** `"python" → "nohtyp"`
-- **Restricción:** intenta primero sin `[::-1]`.
+- **Restricción:** intenta primero sin `[::-1] ó intenta escribirlo en su forma mas cruda`. 
 
 ### 11. Palíndromo
 
