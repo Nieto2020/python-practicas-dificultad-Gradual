@@ -14,5 +14,5 @@ for i in cadena:
 
 for j, val in dic.items():
     if val == 1:
-        print(f"cadena -> {j}")
+        print(f"{cadena} -> {j}")
         break
