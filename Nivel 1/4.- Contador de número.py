@@ -2,5 +2,4 @@
 n = 99
 
 for i in range(n+1):
-    j =+ i
-    print(j)
+    print(i)
