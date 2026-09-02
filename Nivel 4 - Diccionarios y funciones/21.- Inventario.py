@@ -27,7 +27,7 @@ continuar = True
 def agregar(db: dict, producto: str, valor: int) -> None:
     db[producto] = valor
 
-def eliminar(db: dict, producto) -> None:
+def eliminar(db: dict, producto: str) -> None:
     del db[producto]
 
 def modificar(db: dict, producto: str, valor: int) -> None:
@@ -60,5 +60,20 @@ while continuar:
 
     if opt == 0:
         continuar = False
-    elif opt ==1:
-        agregar()
+        print(f"Saliendo...")
+        break
+    elif opt == 1:
+        pd = str(input("Ingresa el producto a agregar: "))
+        val = int(input("Ingresa la cantidad: "))
+        agregar(inventario, pd, val)
+    elif opt == 2:
+        for k in inventario:
+            print(k)
+        pd = str(input("Ingresa el Producto a elminar: "))
+        confirmation = str(input(f"¿Seguro que quieres eliminar '{pd}'? \n |S|N|: ")).lower
+        if confirmation != "n":
+            eliminar(inventario, pd)
+        else:
+            print("Regresando al menu")
+    elif opt == 3:
+        
