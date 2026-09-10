@@ -13,7 +13,6 @@ for i in lista:
     else:
         dic[i] +=1 
 
-
 out = []
 
 for key, value in dic.items():
