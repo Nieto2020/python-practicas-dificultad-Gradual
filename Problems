@@ -220,7 +220,8 @@ Crea funciones para:
 
 ```python
 {
-    3: ["sol", "casa", "pan"],
+    3: ["sol", "pan"]
+    4: ["casa"],
     6: ["python"],
     12: ["programacion"]
 }
