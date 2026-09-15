@@ -21,7 +21,6 @@ for i in n:
                     es_primo = False
                     break  
 
-    # 3. Resultado final para cada número
     if es_primo:
         print(f"{i}: Primo")
     else:
